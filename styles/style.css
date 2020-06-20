@@ -1,0 +1,88 @@
+#card_parent {
+    margin: auto;
+    margin-top: 30vh;
+    height: 30vh;
+    width: 30vw;
+    position: relative;
+    min-width: 270px;
+}
+
+#change-color-card {
+    padding: 5vmin;
+    background-color: #333;
+    color: #fff;
+}
+
+.card {
+    position: relative;
+    box-sizing: border-box;
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.card-hover:hover {
+    box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
+}
+
+#color-switch {
+    background-color: #fff;
+    height: 3.3vw;
+    width: 4.95vw;
+    position: absolute;
+    right: 1vh;
+    bottom: 1vh;
+}
+
+.color-switch-block {
+    width: 1vw;
+    height: 1vw;
+    border: 1px solid black;
+    display: inline-block;
+    position: absolute;
+}
+
+#red-switch {
+    left: 0.35vw;
+    top: 0.35vw;
+    background-color: #f8173e;
+}
+
+#green-switch {
+    left: 1.85vw;
+    top: 0.35vw;
+    background-color: #20603d;
+}
+
+#blue-switch {
+    left: 3.4vw;
+    top: 0.35vw;
+    background-color: #005f9e;
+}
+
+#black-switch {
+    left: 0.35vw;
+    top: 1.85vw;
+    background-color: black;
+}
+
+#white-switch {
+    left: 1.85vw;
+    top: 1.85vw;
+    background-color: white;
+}
+
+#random-switch {
+    left: 3.4vw;
+    top: 1.85vw;
+    background-image: url(../img/question_mark.svg);
+    background-position: center;
+    background-size: contain;
+}
+
+.my-link, .my-link:active, .my-link:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.my-link:hover {
+    color: inherit;
+}
