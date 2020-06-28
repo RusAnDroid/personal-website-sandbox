@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 let red_switch = document.documentElement.querySelector("#red-switch");
 let green_switch = document.documentElement.querySelector("#green-switch");
@@ -80,6 +80,11 @@ function set_right_size() {
             block.style.left = (0.35 + (cnt % 3) * 1.5 + cnt % 3 * 0.05) + "vw";
             ++cnt;
         }
+    }
+    if (window.innerWidth <= 700) {
+        document.documentElement.querySelector("#change-color-card").style.fontSize = "12pt";
+    } else {
+        document.documentElement.querySelector("#change-color-card").style.fontSize = "15pt";
     }
     window.requestAnimationFrame(set_right_size);
 }
