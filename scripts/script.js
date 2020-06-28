@@ -81,10 +81,12 @@ function set_right_size() {
             ++cnt;
         }
     }
-    if (window.innerWidth <= 700) {
+    if (window.innerWidth > 800) {
+        document.documentElement.querySelector("#change-color-card").style.fontSize = "15pt";
+    } else if (window.innerWidth > 650) {
         document.documentElement.querySelector("#change-color-card").style.fontSize = "12pt";
     } else {
-        document.documentElement.querySelector("#change-color-card").style.fontSize = "15pt";
+        document.documentElement.querySelector("#change-color-card").style.fontSize = "10pt";
     }
     window.requestAnimationFrame(set_right_size);
 }
