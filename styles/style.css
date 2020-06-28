@@ -1,3 +1,8 @@
+@font-face {
+    font-family: SpecialElite;
+    src: url(../fonts/SpecialElite-Regular.ttf);
+}
+
 #card_parent {
     margin: auto;
     margin-top: 30vh;
